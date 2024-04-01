@@ -61,7 +61,7 @@
                 <!-- Ini Untuk Select -->
                 <div class="form-floating">
                     <select class="form-select" id="select_kopi" aria-label="Floating label select example">
-                        <option value="" selected >All</option>
+                        <option value="" selected disabled>All</option>
                         <option value="capuchino">Capuccino</option>
                         <option value="espresso">Espresso</option>
                         <option value="kopisusu">Kopi Susu</option>
@@ -334,7 +334,7 @@ var data_kopi = {
 
         console.log(data_kopi)
          function updatePilihan() {
-                select_kopi.innerHTML = `<option value="" selected >All</option>`
+                select_kopi.innerHTML = `<option value="" selected disabled>All</option>`
                 Object.keys(data_kopi).forEach(key => {
                 select_kopi.innerHTML += `<option value="${key}">${key}</option>`
     })
